@@ -1,0 +1,73 @@
+/* base rules  */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+p {
+  font-family: "Nunito" sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  color: #6c775d;
+}
+body {
+  background: black;
+}
+/* navigation  */
+nav.r-nav {
+  background: transparent;
+  padding: 20px 0;
+  transition: all 0.5s;
+}
+nav.r-nav.sticky-add {
+  background: #fff !important;
+  padding: 15px 0;
+  box-shadow: 0 1px 8px 3px rgba(0, 0, 0, 0.05);
+  transition: all 0.5s linear;
+}
+nav.sticky-add .navbar-brand {
+  color: #000;
+  font-size: 40px;
+  transition: all 0.5s;
+}
+nav.sticky-add .navbar-nav .nav-link {
+  color: #000 !important;
+}
+nav .navbar-brand {
+  font-size: 30px;
+  color: #fff;
+}
+nav .navbar-nav li a {
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  font-family: "Nunito", sans-serif;
+}
+nav .navbar-nav li {
+  margin-left: 15px;
+}
+.navbar .hamburger {
+  color: #fff;
+}
+nav.sticky-add .hamburger {
+  color: #000;
+}
+/* header section  */
+header {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../images/cent.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
