@@ -4,7 +4,9 @@
   margin: 0;
   padding: 0;
 }
-
+body {
+  background-color: #f8f9fa;
+}
 h1,
 h2,
 h3,
@@ -19,9 +21,84 @@ p {
   line-height: 30px;
   color: #6c775d;
 }
-body {
-  background: black;
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+.ser-bg {
+  background: #f8f9fa;
+}
+.pyx {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.hire-btn {
+  padding: 5px 20px;
+  background: #ee8683 !important;
+  color: #fff;
+}
+
+/* preloader  */
+.preloader::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  background: #000;
+  transition: 1s;
+}
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 9999;
+}
+.preloader::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 50%;
+  background: #000;
+  transition: 1s;
+}
+.preloader.complete:before {
+  bottom: -50%;
+}
+.preloader.complete:after {
+  top: -50%;
+}
+.preloader.complete {
+  visibility: hidden;
+}
+.circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 10px solid rgba(0, 0, 0, 0.1);
+  border-top: 10px solid #ee8683;
+  animation: animate 1.5s infinite linear;
+  z-index: 10000;
+}
+
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0%);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360%);
+  }
+}
+
 /* navigation  */
 nav.r-nav {
   background: transparent;
@@ -66,8 +143,135 @@ nav.sticky-add .hamburger {
 header {
   height: 100vh;
   width: 100%;
-  background-image: url("../images/cent.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../images/logo.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+.header-content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.content-box {
+  max-width: 700px;
+  color: #fff;
+}
+
+.content-box h4 {
+  font-size: 30px;
+}
+.content-box h1 {
+  font-size: 52px;
+}
+.content-box a {
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  padding: 5px 25px;
+  transition: all 0.5s linear;
+}
+.content-box a:hover {
+  color: #000;
+  background: #fff;
+  transform: scale(1.1);
+}
+.content-box p {
+  color: antiquewhite;
+}
+/* about section  */
+.about li a {
+  color: #000;
+  display: inline-block;
+  height: 42px;
+  width: 42px;
+  font-size: 20px;
+  border: 2px solid #d4d4d4;
+  border-radius: 50px;
+  list-style: 40px;
+  transition: all 0.5s linear;
+  text-align: center;
+}
+.about li a:hover {
+  transform: translateY(-50%);
+  color: #ee8683;
+}
+.about li a .icon {
+  padding-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* skill section  */
+.exp-class .progress {
+  height: 10px;
+  border-radius: 20px;
+  font-size: 10px;
+}
+.progres-bar {
+  background-color: #ee8683 !important;
+}
+.exp-class label {
+  font-size: 20px;
+  margin: 10px;
+}
+
+/* services section  */
+.card,
+.card-header {
+  background: #f8f9fa !important;
+}
+.card-header {
+  border: none !important;
+}
+.services-class .card-header i {
+  font-size: 50px;
+}
+.services-border {
+  height: 2px;
+  width: 40px;
+  margin: 15px auto;
+  background: #ee8683;
+}
+
+/* work section  */
+
+.work .card-wrapper {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.work-image {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+/* contact section  */
+
+.contact .contact-icon {
+  font-size: 50px;
+  text-align: center;
+}
+
+/* footer  */
+footer {
+  height: 200px;
+  background: #333333;
+}
+footer .footer-icon a {
+  font-size: 20px;
+  color: #848484;
+  padding: 10px;
+  border: 1px solid #848484;
+  border-radius: 50%;
+}
+footer .footer-icon a:hover {
+  border: 1px solid #eee;
+  color: #eee;
+  transition: all 0.5s;
 }

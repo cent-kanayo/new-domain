@@ -15,6 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Nunito:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css" integrity="sha512-5PV92qsds/16vyYIJo3T/As4m2d8b6oWYfoqV+vtizRB6KhF1F9kYzWzQmsO6T3z3QG2Xdhrx7FQ+5R1LiQdUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
@@ -22,8 +23,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./lib/animate.css">
   </head>
   <body>
+    <div class="preloader">
+      <div class="circle"></div>
+    </div>
     <nav class="navbar navbar-expand-lg sticky sticky-top r-nav">
       <div class="container">
         <a href="#" class="navbar-brand">Cent Kanayo</a>
@@ -39,30 +45,31 @@
         <div class="collapse navbar-collapse" id="navbarId">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-              <a href="" class="nav-link">Home</a>
+              <a href="#home" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link">About</a>
+              <a href="#about" class="nav-link">About</a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link">Services</a>
+              <a href="#services-id" class="nav-link">Services</a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link">Portfolio</a>
+              <a href="#work" class="nav-link">Work</a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link">Contact</a>
+              <a href="#contact" class="nav-link">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <header id="home">
-      <div class="container-fluid">
+      <div class="container-fluid header-content">
         <div class="row">
           <div class="col text-center">
-            <div class="content-box">
-              <h1>Hi, I'm Chukwu Innocent</h1>
+            <div class="content-box animated fadeInUp">
+              <h4>Welcome!</h4>
+              <h1>I'm <span class="element" style="color: #ee8683; font-weight: bold;"></span></h1>
               <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Dolore, quam?
@@ -73,10 +80,387 @@
         </div>
       </div>
     </header>
+    <section id="about" class="about pyx">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 mt-5 mt-lg-0">
+            <img
+              src="./images/cent.jpg"
+              alt="profile picture"
+              class="img-fluid img-thumbnail"
+            />
+          </div>
+          <div class="col-lg-6 mt-5 mt-lg-0">
+            <h2>Get To Know Me</h2>
+            <h4>
+              Hello! <span style="color: #e96f85"></span> I'M Chukwu Innocent
+            </h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Consequuntur delectus non veniam beatae. Totam, illo.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo
+              ducimus, rerum obcaecati quis dolorem veniam ratione harum fugit
+              corrupti fugiat.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus, corrupti.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+              inventore reprehenderit quis aspernatur saepe illum vero
+              laudantium quia cumque dolorem.
+            </p>
+            <ul class="list-inline mt-5">
+              <li class="list-inline-item">
+                <a href="https://linkedin.com/in/centkanayo10"
+                  ><i class="fa-brands fa-linkedin icon"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://github.com/cent-kanayo"
+                  ><i class="fa-brands fa-square-github icon"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://facebook.com/centkanayo10"
+                  ><i class="fa-brands fa-square-facebook icon"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://twitter.com/centkanayo10"
+                  ><i class="fa-brands fa-square-twitter icon"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="exp-id" class="exp-class">
+      <div class="container pyx">
+        <div class="row">
+          <div
+            class="col-md-6 d-flex justify-content-center align-items-center"
+          >
+            <h3>My Best Skills</h3>
+          </div>
+          <div class="col-md-6">
+            <label>Html5</label>
+            <div class="progress">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                style="width: 0%"
+                aria-valuenow="0"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                95%
+              </div>
+            </div>
+            <label>Css3</label>
+            <div class="progress">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                style="width: 0%"
+                aria-valuenow="0"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                80%
+              </div>
+            </div>
+            <label>JavaScript</label>
+            <div class="progress">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                style="width: 0%"
+                aria-valuenow="0"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                75%
+              </div>
+            </div>
+            <label>TypeScript</label>
+            <div class="progress">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                style="width: 0%"
+                aria-valuenow="0"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                65%
+              </div>
+            </div>
+            <label>React.Js</label>
+            <div class="progress">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                style="width: 0%"
+                aria-valuenow="0"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                75%
+              </div>
+            </div>
+            <label>Redux Toolkit</label>
+            <div class="progress">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                style="width: 0%"
+                aria-valuenow="0"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                70%
+              </div>
+            </div>
+            <label>Boostrap</label>
+            <div class="progress">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                style="width: 0%"
+                aria-valuenow="0"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                80%
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="services-id" class="services-class pyx ser-bg">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <div class="col">
+              <h2>My Services</h2>
+              <p>Services that I offer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card mb-3">
+              <div class="card-header">
+                <i class="fa-solid fa-lightbulb"></i>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Web Design</h5>
+                <div class="services-border"></div>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perspiciatis, quo.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card mb-3">
+              <div class="card-header">
+                <i class="fa-solid fa-desktop"></i>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Web Development</h5>
+                <div class="services-border"></div>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perspiciatis, quo.
+                </p>
+              </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card mb-3">
+              <div class="card-header">
+                <i class="fa-solid fa-database"></i>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">DataBase Administration</h5>
+                <div class="services-border"></div>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perspiciatis, quo.
+                </p>
+              </div>
+          </div>
+      </div>
+    </section>
+    <section id="hire-id" class="hire-me pyx mb-5">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <h3 class="mb-4">I am Available for Employement</h3>
+                    <a href="#" class="btn hire-btn">Hire Me!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="work" class="work">
+            <div class="container text-center">
+                <div class="row">
+                   <div class="col mb-5">
+                    <h2>Work</h2>
+                    <p>What I have created</p>
+                   </div> 
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 mx-auto mb-5">
+                        <button class="btn hire-btn" data-filter="all">All</button>
+                        <button class="btn hire-btn" data-filter="1">Design</button>
+                        <button class="btn hire-btn" data-filter="2">Development</button>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row filter-container mx-auto">
+                        <div class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper" data-category="1">
+                           <div>
+                             <img src="./images/SDYO9297.JPG" alt="work image" class="img-fluid work-image">
+                           </div>
+                       </div>
+                        <div class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper" data-category="1, 2">
+                           <div>
+                             <img src="./images/comfy.png" alt="work image" class="img-fluid work-image">
+                           </div>
+                       </div>
+                        <div class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper" data-category="2">
+                           <div>
+                             <img src="./images/jobster.png" alt="work image" class="img-fluid work-image">
+                           </div>
+                       </div>
+                        <div class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper" data-category="1">
+                           <div>
+                             <img src="./images/tindon.png" alt="work image" class="img-fluid work-image">
+                           </div>
+                       </div>
+                        <div class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper" data-category="2">
+                           <div>
+                             <img src="./images/Screenshot from 2022-08-05 15-30-35.png" alt="work image" class="img-fluid work-image">
+                           </div>
+                       </div>
+                        <div class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper" data-category="2">
+                           <div>
+                             <img src="./images/cock.png" alt="work image" class="img-fluid work-image">
+                           </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section id="contact" class="contact pyx ser-bg">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <h2>Contact Me</h2>
+                    <p>Feel free to contact me</p>
+                </div>
+            </div>
+            <div class="row mt-5">
+               <div class="col-md-4">
+                <div class="contact-icon">
+                   <i class="fa-solid fa-mobile-button"></i> 
+                </div>
+                    <div class="text-center">
+                        <h5>Tell</h5>
+                        <p>+234 906 545 7397</p>
+                    </div>
+               </div>
+               <div class="col-md-4">
+                 <div class="contact-icon">
+                   <i class="bi bi-envelope-paper-fill"></i>
+                </div>
+                    <div class="text-center">
+                        <h5>Email</h5>
+                        <p>centkanayo@gmail.com</p>
+                    </div>
+               </div>
+               <div class="col-md-4">
+                 <div class="contact-icon">
+                <i class="bi bi-geo-fill"></i>
+                </div>
+                    <div class="text-center">
+                        <h5>Location</h5>
+                        <p>Yaba, Lagos</p>
+                    </div>
+               </div> 
+            </div>
+            <div class="row mt-5">
+                <div class="col">
+                    <form>
+                       <div class="form-row">
+                       <div class="row">
+                         <div class="form-group col-md-6 mb-3">
+                          <input type="text" class="form-control" placeholder="Name" >
+                        </div>
+                        <div class="form-group col-md-6 mb-3">
+                          <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                       </div>
+                       </div>
+                       <div class="form-group">
+                        <input type="text" class="form-control mb-3" placeholder="Subject">
+                       </div>
+                       <div class="form-group">
+                        <textarea rows="5" class="form-control mb-3" placeholder="Your Message" style="resize: none;"></textarea>
+                       </div>
+                       <button class="btn hire-btn float-end">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+      <div class="container h-100 d-flex align-items-center justify-content-center">
+        <div class="row">
+          <div class="col">
+            <div class="footer-icon text-center mt-3">
+              <li class="list-inline-item">
+                   <a href="https://linkedin.com/in/centkanayo10"
+                  ><i class="fa-brands fa-linkedin footer-icon"></i
+                ></a>
+              </li>
+               <li class="list-inline-item">
+                <a href="https://github.com/cent-kanayo"
+                  ><i class="fa-brands fa-square-github footer-icon"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://facebook.com/centkanayo10"
+                  ><i class="fa-brands fa-square-facebook footer-icon"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://twitter.com/centkanayo10"
+                  ><i class="fa-brands fa-square-twitter footer-icon"></i
+                ></a>
+              </li>
+            </div>
+            <p class="text-muted mt-3" style="font-size: 14px;">&copy; copyright Cent Kanayo | <time class="time"></time> All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- JavaScript Bundle with Popper -->
     <script src="./lib/jquery-3.6.0.min.js"></script>
     <script src="./lib//popper.min.js"></script>
     <script src="./lib/js/bootstrap.min.js"></script>
+    <script src="./lib/typed.min.js"></script>
+    <script src="./lib/jquery.waypoints.min.js"></script>
+    <script src="./lib/jquery.filterizr.min.js"></script>
     <script src="./js/app.js"></script>
   </body>
 </html>
