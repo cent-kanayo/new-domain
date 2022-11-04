@@ -4,8 +4,12 @@
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: #f8f9fa;
+  background-color: #fff;
 }
 h1,
 h2,
@@ -13,10 +17,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 p {
-  font-family: "Nunito" sans-serif;
+  font-family: 'Nunito' sans-serif;
   font-size: 20px;
   line-height: 30px;
   color: #6c775d;
@@ -41,7 +45,7 @@ p {
 
 /* preloader  */
 .preloader::before {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -59,7 +63,7 @@ p {
   z-index: 9999;
 }
 .preloader::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   width: 100%;
@@ -105,49 +109,56 @@ nav.r-nav {
   padding: 20px 0;
   transition: all 0.5s;
 }
+nav.navbar .navbar-brand {
+  color: rgb(31, 106, 167);
+}
+nav.navbar .navbar-nav .nav-link {
+  color: blue !important;
+}
 nav.r-nav.sticky-add {
-  background: #fff !important;
+  background: rgb(31, 106, 167) !important;
   padding: 15px 0;
   box-shadow: 0 1px 8px 3px rgba(0, 0, 0, 0.05);
   transition: all 0.5s linear;
 }
 nav.sticky-add .navbar-brand {
-  color: #000;
+  color: #f8f9fa;
   font-size: 40px;
   transition: all 0.5s;
 }
 nav.sticky-add .navbar-nav .nav-link {
-  color: #000 !important;
+  color: white !important;
 }
 nav .navbar-brand {
   font-size: 30px;
   color: #fff;
 }
 nav .navbar-nav li a {
-  color: rgba(255, 255, 255, 0.8) !important;
+  color: red !important;
   font-size: 16px;
   letter-spacing: 0.05em;
   font-weight: 600;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 nav .navbar-nav li {
   margin-left: 15px;
 }
+
 .navbar .hamburger {
-  color: #fff;
+  color: blue;
 }
 nav.sticky-add .hamburger {
-  color: #000;
+  color: white;
 }
 /* header section  */
 header {
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("../images/logo.svg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('../images/logo.svg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
 }
 .header-content {
   height: 100vh;
@@ -171,9 +182,10 @@ header {
   color: #fff;
   text-decoration: none;
   border: 2px solid #fff;
-  border-radius: 20px;
-  padding: 5px 25px;
+  border-radius: 40px;
+  padding: 16px 32px;
   transition: all 0.5s linear;
+  font-size: 1.5rem;
 }
 .content-box a:hover {
   color: #000;
@@ -183,7 +195,18 @@ header {
 .content-box p {
   color: antiquewhite;
 }
+/* scroll behavior  */
+
+.about,
+.exp-class,
+.services-class,
+.contact,
+.work {
+  scroll-margin-top: 4rem;
+}
+
 /* about section  */
+
 .about li a {
   color: #000;
   display: inline-block;
@@ -205,6 +228,12 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 /* skill section  */
 .exp-class .progress {
@@ -239,7 +268,9 @@ header {
 }
 
 /* work section  */
-
+.work {
+  background: #a9a9af;
+}
 .work .card-wrapper {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -261,7 +292,7 @@ header {
 /* footer  */
 footer {
   height: 200px;
-  background: #333333;
+  background: #060713;
 }
 footer .footer-icon a {
   font-size: 20px;
